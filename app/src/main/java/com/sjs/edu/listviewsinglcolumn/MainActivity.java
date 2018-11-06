@@ -12,10 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //첫번째 수정
-    //두번째 수정
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // comment two
+        //comment one
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
