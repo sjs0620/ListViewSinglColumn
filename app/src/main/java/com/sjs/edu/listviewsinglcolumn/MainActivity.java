@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //첫번째 수정
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String seleted = ((TextView)view).getText().toString();
-                String text = parent.getItemAtPosition(position).toString();
-                Toast.makeText(view.getContext(),seleted+"  "+text,Toast.LENGTH_SHORT).show();
+                String strText = ((TextView)view).getText().toString();
+                String strPos = parent.getItemAtPosition(position).toString();
+                Toast.makeText(view.getContext(),strText+"  "+strPos,Toast.LENGTH_SHORT).show();
             }
         });
     }
