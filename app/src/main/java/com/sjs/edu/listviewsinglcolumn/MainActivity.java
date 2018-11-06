@@ -12,12 +12,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     //첫번째 수정
+    //두번째 수정
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // comment two
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] FRUITS = new String[] {"Apple", "Avocado", "Banana", "Blueberry"};
+        String[] FRUITS = new String[] {"Apple", "Avocado", "Banana", "Blueberry", "Orange"};
         ListView listView = (ListView)findViewById(R.id.resultList);
         ArrayAdapter<String> arrayAdapter =
                 new ArrayAdapter<String>(this,R.layout.listview_single_column,FRUITS);
